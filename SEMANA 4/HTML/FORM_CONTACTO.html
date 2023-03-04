@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO HTML</title>
+    <link rel="stylesheet" href="../CSS/CONTACTO.css"></link>
+</head>
+<body style="background-color:lemonchiffon;">
+    <header>
+        <img src="../img/incap.png" width="100" height="100" alt="incap">
+        <h1>FORMULARIO Y LISTAS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contactos</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <!-- Sección de ingreso de nombre completo -->
+            <label for="">Nombre Completo</label>
+            <input type="text" name="nombre" placeholder="ingrese su nombre" required>
+            <br><br>
+            <hr>
+            <!-- Sección de ingreso de email-->
+            <label for="">E-mail</label>
+            <input type="email" name="email" placeholder="ingrese su correo electronico" required>
+            <br><br>
+            <hr>
+            <!-- Sección de contraseña -->
+            <label for="">Contraseña</label>
+            <input type="password" name="contraseña" placeholder="ingrese su contraseña" required>
+            <br><br>
+            <hr>
+            <!-- Sección Hobbies -->
+            <label for="">Selecciona tus Hobbies</label>
+            <br>
+            <input type="checkbox">Cine <br>
+            <input type="checkbox">Lectura <br>
+            <input type="checkbox">Deporte <br>
+            <br>
+            <hr>
+            <!-- Estado Civil -->
+            <label for="">Estado Civil</label><br>
+            <input type="radio" name="estcivil">Casado(a) <br>
+            <input type="radio" name="estcivil">Soltero(a) <br>
+            <input type="radio" name="estcivil">Viudo(a) <br>
+            <br><br>
+            <hr>
+            <!-- Sección programas tecnicos -->
+            <label for="">PROGRAMAS TECNICOS</label><br>
+            <select name="" id="">
+                <option value="">Seleccionar programa</option>
+                <option value="">Sistemas</option>
+                <option value="">Diseño Gráfico</option>
+                <option value="">Contabilidad</option>
+            </select>
+            <br><br>
+            <hr>
+            <!-- Sección comentarios -->
+            <label for="">COMENTARIO</label><br>
+            <textarea name="" id="" cols="30" rows="08"></textarea>
+            <br><br>
+            <hr>
+            <!-- Sección Botones -->
+            <button type="submit">ENVIAR</button>
+            <button type="reset">CANCELAR</button>
+        </form>
+    </section>
+    <!-- Sección pie de pagina -->
+    <footer>
+        <p>Derechos reservados: &copy;2023&#64;Kevin</p>
+    </footer>
+</body>
+</html>

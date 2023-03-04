@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(255,255,255,0.6);
+    background-image: url(../img/original.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: hard-light;
+}
+header{
+    background-color: rgba(255,255,255,0.3);
+    border: 2px solid blue;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;/* alineación horoizontal*/
+    justify-content: center;
+    align-items: center;
+    /* Efecto tipo glass */
+    backdrop-filter: blur(5px);
+}
+header img{
+    padding: 20px; /* Separación hoirizontal por medio de pixeles*/
+}
+nav{
+    background-color: lightblue;
+    border: 2px solid green;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    color: black;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 5px;
+    font: bold 12px Verdana;
+}
